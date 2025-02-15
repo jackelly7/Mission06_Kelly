@@ -1,0 +1,78 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  max-width: 350px;
+}
+
+.movie-form label {
+  margin-bottom: 10px;
+}
+
+.link-container {
+  margin: 20px 0;
+}
+
+.link {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 350px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
