@@ -6,9 +6,9 @@
 
 <p>Add Movies Here!!!</p>
 
-<form class="movie-form">
+<form class="movie-form" method="post">
     <label asp-for="Title">Movie Title: </label>
-    <input asp-for="Title" type="text" name="MovieTitle" required/>
+    <input asp-for="Title" type="text" name="Title" required/>
 
     <label asp-for="Category">Category:</label>
     <select asp-for="Category" name="Category" id="Category" required>
@@ -32,7 +32,7 @@
     </select>
 
     <label asp-for="Director">Director Name:</label>
-    <input asp-for="Director" type="text" name="DirectorName" required/>
+    <input asp-for="Director" type="text" name="Director" required/>
 
     <label asp-for="Rating">Rating:</label>
     <select asp-for="Rating" type="text" name="Rating" required>
