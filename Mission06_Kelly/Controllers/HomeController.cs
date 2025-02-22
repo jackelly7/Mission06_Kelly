@@ -25,6 +25,14 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult MoviesManager()
+    {
+        _context.Movies
+            .OrderBy(x => x.Title).ToList();
+
+        return View();
+    }
+
     [HttpGet]
     public IActionResult AddMovie()
     {
